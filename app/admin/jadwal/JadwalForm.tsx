@@ -318,7 +318,8 @@ placeholder:text-gray-400
               font-semibold
               hover:bg-gray-100
               transition
-              text-gray-800
+              text-gray-900
+placeholder:text-gray-400
             "
           >
             Reset

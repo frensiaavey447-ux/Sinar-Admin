@@ -34,7 +34,7 @@ export default function UpcomingEvent() {
       .gte("tanggal", today)
       .order("tanggal", { ascending: true })
       .limit(1)
-      .single();
+      .maybeSingle()
 
     if (error) {
       console.log(error);
@@ -60,19 +60,25 @@ export default function UpcomingEvent() {
     );
   }
 
-  if (!event) {
-    return (
-      <section>
-        <h2 className="text-white text-[20px] font-bold mb-5">
-          Kegiatan Terdekat
-        </h2>
+ if (!event) {
+  return (
+    <section>
+      <h2 className="text-white text-[20px] font-bold mb-5">
+        Kegiatan Terdekat
+      </h2>
 
-        <div className="bg-white rounded-xl p-6 text-center">
-          Belum ada kegiatan.
-        </div>
-      </section>
-    );
-  }
+      <div className="bg-white rounded-xl p-6 text-center">
+        <h3 className="text-lg font-semibold text-[#29411C]">
+          Belum ada kegiatan
+        </h3>
+
+        <p className="mt-2 text-sm text-gray-500">
+          Belum ada jadwal kegiatan yang akan datang.
+        </p>
+      </div>
+    </section>
+  );
+}
 
   const day = new Date(event.tanggal).getDate();
 
@@ -84,17 +90,18 @@ export default function UpcomingEvent() {
       </h2>
 
       <div
-        className="
-          bg-white
-          rounded-[12px]
-          shadow-lg
-          px-6
-          py-5
-          flex
-          items-start
-          gap-6
-          h-[160px]
-        "
+className="
+  bg-white
+  text-[#29411C]
+  rounded-[12px]
+  shadow-lg
+  px-6
+  py-5
+  flex
+  items-start
+  gap-6
+  h-[160px]
+"
       >
 
         <div

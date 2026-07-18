@@ -43,13 +43,14 @@ export default function JadwalPopup({
           rounded-3xl
           shadow-2xl
           w-full
-          max-w-[90vh]
-          max-h-[90vh]
+          max-w-[70vh]
+          max-h-[70vh]
           overflow-y-auto
           animate-in
           fade-in
           zoom-in-80
           text-[12px]
+
         "
       >
 
@@ -62,7 +63,7 @@ export default function JadwalPopup({
             justify-between
             border-b
             px-8
-            py-6
+            py-2
           "
         >
 
@@ -76,32 +77,27 @@ export default function JadwalPopup({
 
             </h2>
 
-            <p className="text-gray-500 mt-1">
-
-              {selected
-                ? "Perbarui data jadwal kegiatan."
-                : "Tambahkan jadwal kegiatan baru."}
-
-            </p>
-
           </div>
 
-          <button
-            onClick={onClose}
-            className="
-              w-11
-              h-11
-              rounded-full
-              hover:bg-gray-100
-              flex
-              items-center
-              justify-center
-            "
-          >
-
-            <X size={20} />
-
-          </button>
+<button
+  onClick={onClose}
+  className="
+    w-11
+    h-11
+    rounded-full
+    hover:bg-gray-100
+    flex
+    items-center
+    justify-center
+    text-gray-700
+  "
+>
+  <X
+    size={24}
+    strokeWidth={2.5}
+    className="text-gray-700"
+  />
+</button>
 
         </div>
 

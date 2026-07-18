@@ -55,6 +55,7 @@ export default function ProfilePage() {
     fetchProfile();
   }, []);
 
+  
   async function fetchProfile() {
     setLoading(true);
 
@@ -215,7 +216,7 @@ export default function ProfilePage() {
 
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition group-hover:opacity-100">
 
-            <div className="rounded-xl bg-white px-5 py-3 font-semibold shadow-lg">
+            <div className="rounded-xl bg-white text-gray-900 px-5 py-3 font-semibold shadow-lg">
               Ganti Hero
             </div>
 
@@ -225,7 +226,7 @@ export default function ProfilePage() {
 
         {/* HERO CARD */}
 
-        <div className="flex h-[310px] flex-col justify-center rounded-[24px] bg-white p-10">
+        <div className="flex h-[310px] flex-col justify-center rounded-[24px] bg-white text-gray-900 p-10">
 
           <h2
             onClick={() =>
@@ -234,7 +235,7 @@ export default function ProfilePage() {
                 profile.title
               )
             }
-            className="cursor-pointer text-[17px] font-bold leading-9 transition hover:text-green-700"
+            className="cursor-pointer text-[17px] font-bold leading-6 transition hover:text-green-700"
           >
             {profile.title}
           </h2>
@@ -246,7 +247,7 @@ export default function ProfilePage() {
                 profile.description
               )
             }
-            className="mt-7 cursor-pointer whitespace-pre-line text-[14px] leading-8 transition hover:text-green-700"
+            className="mt-4 cursor-pointer whitespace-pre-line text-[14px] leading-7 transition hover:text-green-700"
           >
             {profile.description}
           </p>
@@ -281,7 +282,7 @@ export default function ProfilePage() {
           />
 
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition group-hover:opacity-100">
-            <div className="rounded-xl bg-white px-5 py-3 font-semibold shadow-lg">
+            <div className="rounded-xl bg-white text-gray-900 px-5 py-3 font-semibold shadow-lg">
               Ganti Banner
             </div>
           </div>
@@ -313,7 +314,7 @@ export default function ProfilePage() {
                   profile.visi
                 )
               }
-              className="cursor-pointer rounded-[24px] bg-white p-8 shadow-lg transition duration-300 hover:scale-[1.02]"
+              className="cursor-pointer rounded-[24px] bg-white text-gray-900 p-8 shadow-lg transition duration-300 hover:scale-[1.02]"
             >
               <p className="cursor-pointer whitespace-pre-line text-[14px] leading-8 text-black transition hover:text-green-700">
                 {profile.visi}
@@ -335,7 +336,7 @@ export default function ProfilePage() {
                   profile.misi.join("\n")
                 )
               }
-              className="cursor-pointer rounded-[24px] bg-white p-8 shadow-lg transition duration-300 hover:scale-[1.02]"
+              className="cursor-pointer rounded-[24px] bg-white text-gray-900 p-8 shadow-lg transition duration-300 hover:scale-[1.02]"
             >
               <p className="cursor-pointer whitespace-pre-line text-[14px] leading-8 text-black transition hover:text-green-700">
                 {profile.misi.join("\n")}
@@ -352,7 +353,7 @@ export default function ProfilePage() {
       {showTextModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
 
-          <div className="w-full max-w-2xl rounded-[24px] bg-white p-8 shadow-2xl">
+          <div className="w-full max-w-2xl rounded-[24px] bg-white text-gray-900 p-8 shadow-2xl">
 
             <div className="mb-6 flex items-center justify-between">
 
@@ -440,7 +441,7 @@ export default function ProfilePage() {
       {showImageModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
 
-          <div className="w-full max-w-xl rounded-[24px] bg-white p-8 shadow-2xl">
+          <div className="w-full max-w-xl rounded-[24px] bg-white text-gray-900 p-8 shadow-2xl">
 
             <div className="mb-6 flex items-center justify-between">
 

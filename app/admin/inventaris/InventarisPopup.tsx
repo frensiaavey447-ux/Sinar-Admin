@@ -75,14 +75,13 @@ export default function InventarisPopup({
                 {/* Header */}
 
         <div
-          className="
-            flex
-            items-center
-            justify-between
-            border-b
-            px-8
-            py-6
-          "
+className="
+flex
+items-center
+justify-end
+px-8
+pb-0
+"
         >
 
           <div>
@@ -95,32 +94,27 @@ export default function InventarisPopup({
 
             </h2>
 
-            <p className="text-gray-500 mt-1">
-
-              {isEdit
-                ? "Perbarui data inventaris."
-                : "Tambahkan inventaris baru."}
-
-            </p>
-
           </div>
 
-          <button
-            onClick={onClose}
-            className="
-              w-11
-              h-11
-              rounded-full
-              hover:bg-gray-100
-              flex
-              items-center
-              justify-center
-            "
-          >
-
-            <X size={20} />
-
-          </button>
+<button
+  onClick={onClose}
+  className="
+    w-11
+    h-11
+    rounded-full
+    hover:bg-gray-100
+    flex
+    items-center
+    justify-center
+    text-gray-700
+    -mr-6
+  "
+>
+  <X
+    size={20}
+    className="text-gray-700"
+  />
+</button>
 
         </div>
 

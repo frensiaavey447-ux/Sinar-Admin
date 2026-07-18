@@ -142,15 +142,14 @@ export default function PrayerSchedule() {
                 }
               `}
             >
+<h3 className="font-bold text-[12px] text-[#29411C]">
+  {item.name}
+</h3>
 
-              <h3 className="font-bold text-[12px]">
-                {item.name}
-              </h3>
 
-              <div className="my-3">
-                {prayerIcons[item.name]}
-              </div>
-
+<div className="my-3 text-[#467235]">
+  {prayerIcons[item.name]}
+</div>
               <p className="font-semibold text-[16px] text-gray-700">
                 {item.time.slice(0, 5)}
               </p>

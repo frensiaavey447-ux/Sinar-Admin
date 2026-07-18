@@ -18,21 +18,24 @@ export default function PengurusForm({
   const [nama, setNama] = useState("");
   const [jabatan, setJabatan] = useState("");
   const [foto, setFoto] = useState<File | null>(null);
+  const [previewFoto, setPreviewFoto] = useState("");
 
-  useEffect(() => {
-    if (selected) {
-      setNama(selected.nama);
-      setJabatan(selected.jabatan);
-    } else {
-      resetForm();
-    }
-  }, [selected]);
-
-  function resetForm() {
-    setNama("");
-    setJabatan("");
-    setFoto(null);
+useEffect(() => {
+  if (selected) {
+    setNama(selected.nama);
+    setJabatan(selected.jabatan);
+    setPreviewFoto(selected.foto ?? "");
+  } else {
+    resetForm();
   }
+}, [selected]);
+
+function resetForm() {
+  setNama("");
+  setJabatan("");
+  setFoto(null);
+  setPreviewFoto("");
+}
 
 async function simpanPengurus() {
   if (!nama || !jabatan) {
@@ -73,11 +76,11 @@ if (uploadError) {
   if (selected) {
     const { error } = await supabase
       .from("pengurus")
-      .update({
-        nama,
-        jabatan,
-        foto: fotoUrl,
-      })
+.update({
+  nama,
+  jabatan,
+  foto: fotoUrl ?? selected?.foto,
+})
       .eq("id", selected.id);
 
     if (error) {
@@ -142,6 +145,8 @@ return (
           focus:ring-4
           focus:ring-green-100
           focus:border-[#4D7B38]
+          text-gray-900
+placeholder:text-gray-500
         "
           />
 
@@ -214,15 +219,21 @@ rounded-full
     bg-[#F8F8F8]
   "
 >
-  {foto ? (
-    <img
-      src={URL.createObjectURL(foto)}
-      alt="Preview"
-      className="w-full h-full object-cover"
-    />
-  ) : (
-    <span className="text-[70px] text-gray-400">+</span>
-  )}
+{foto ? (
+  <img
+    src={URL.createObjectURL(foto)}
+    alt="Preview"
+    className="w-full h-full object-cover"
+  />
+) : previewFoto ? (
+  <img
+    src={previewFoto}
+    alt="Preview"
+    className="w-full h-full object-cover"
+  />
+) : (
+  <span className="text-[70px] text-gray-400">+</span>
+)}
 </label>
 
             <input

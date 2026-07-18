@@ -59,7 +59,7 @@ export default function LaporanForm({
 
         <div>
 
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
+          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-1">
 
             <CalendarDays
               size={18}
@@ -104,7 +104,7 @@ placeholder:text-gray-500
 
         <div>
 
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
+          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-1">
 
             <Tag
               size={18}
@@ -137,6 +137,8 @@ placeholder:text-gray-500
               focus:ring-4
               focus:ring-green-100
               focus:border-[#4D7B38]
+               text-gray-900
+placeholder:text-gray-500
             "
           >
             <option value="">Pilih Jenis</option>
@@ -150,7 +152,7 @@ placeholder:text-gray-500
 
         <div className="md:col-span-2">
 
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
+          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-1">
 
             <NotebookPen
               size={18}
@@ -195,7 +197,7 @@ placeholder:text-gray-500
 
         <div className="md:col-span-2">
 
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
+          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-1">
 
             <FileText
               size={18}
@@ -216,22 +218,25 @@ placeholder:text-gray-500
               })
             }
             placeholder="Masukkan deskripsi laporan"
-            className="
-              w-full
-              rounded-2xl
-              border
-              border-gray-200
-              px-5
-              py-3
-              bg-white
-              shadow-sm
-              outline-none
-              resize-none
-              transition-all
-              focus:ring-4
-              focus:ring-green-100
-              focus:border-[#4D7B38]
-            "
+className="
+w-full
+rounded-2xl
+border
+border-gray-200
+px-5
+py-3
+bg-white
+shadow-sm
+outline-none
+resize-none
+transition-all
+focus:ring-4
+focus:ring-green-100
+focus:border-[#4D7B38]
+text-gray-900
+placeholder:text-gray-500
+caret-black
+"
           />
 
         </div>
@@ -240,7 +245,7 @@ placeholder:text-gray-500
 
         <div>
 
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
+          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-1">
 
             <CircleDollarSign
               size={18}
@@ -286,7 +291,7 @@ placeholder:text-gray-500
 
         <div>
 
-          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-2">
+          <label className="flex items-center gap-2 text-sm font-semibold text-gray-700 mb-1">
 
             <Tag
               size={18}
@@ -305,21 +310,22 @@ placeholder:text-gray-500
                 status: e.target.value,
               })
             }
-            className="
-              w-full
-              h-11
-              rounded-2xl
-              border
-              border-gray-200
-              px-5
-              bg-white
-              shadow-sm
-              outline-none
-              transition-all
-              focus:ring-4
-              focus:ring-green-100
-              focus:border-[#4D7B38]
-            "
+ className="
+w-full
+h-11
+rounded-2xl
+border
+border-gray-200
+px-5
+bg-white
+shadow-sm
+outline-none
+transition-all
+focus:ring-4
+focus:ring-green-100
+focus:border-[#4D7B38]
+text-gray-900
+"
           >
             <option value="">Pilih Status</option>
             <option value="Lunas">Lunas</option>
@@ -358,13 +364,13 @@ placeholder:text-gray-500
 
             <div className="flex justify-center gap-4">
 
-              <button
-                type="button"
-                onClick={onDelete}
-                className="w-60 h-11 rounded-xl border border-gray-300 bg-white hover:bg-gray-100 font-semibold"
-              >
-                Hapus
-              </button>
+<button
+  type="button"
+  onClick={onDelete}
+  className="w-60 h-11 rounded-xl border border-gray-300 bg-white text-gray-800 hover:bg-gray-100 font-semibold"
+>
+  Hapus
+</button>
 
               <button
                 type="button"

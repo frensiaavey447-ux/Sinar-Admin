@@ -62,7 +62,7 @@ export default function LaporanPopup({
           shadow-2xl
           w-full
           max-w-[70vh]
-
+          max-h-[78vh]
           overflow-y-auto
           animate-in
           fade-in
@@ -74,19 +74,18 @@ export default function LaporanPopup({
         {/* Header */}
 
         <div
-          className="
-            flex
-            items-center
-            justify-between
-            border-b
-            px-8
-            py-6
-          "
+className="
+flex
+items-center
+justify-end
+px-8
+pb-0
+"
         >
 
           <div>
 
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-3xl font-bold">
 
               {isEdit
                 ? "Edit Laporan"
@@ -94,32 +93,27 @@ export default function LaporanPopup({
 
             </h2>
 
-            <p className="text-gray-500 mt-1">
-
-              {isEdit
-                ? "Perbarui data laporan keuangan."
-                : "Tambahkan laporan keuangan baru."}
-
-            </p>
-
           </div>
 
-          <button
-            onClick={onClose}
-            className="
-              w-11
-              h-11
-              rounded-full
-              hover:bg-gray-100
-              flex
-              items-center
-              justify-center
-            "
-          >
-
-            <X size={20} />
-
-          </button>
+<button
+  onClick={onClose}
+  className="
+    w-11
+    h-11
+    rounded-full
+    hover:bg-gray-100
+    flex
+    items-center
+    justify-center
+    text-gray-700
+    -mr-6
+  "
+>
+  <X
+    size={20}
+    className="text-gray-700"
+  />
+</button>
 
         </div>
 

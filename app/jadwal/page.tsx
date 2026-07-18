@@ -81,7 +81,7 @@ export default function JadwalPage() {
                   className="
                     h-[340px]
                     rounded-[28px]
-                    bg-white
+                    bg-white text-gray-900
                     animate-pulse
                   "
                 />
@@ -149,19 +149,19 @@ export default function JadwalPage() {
                     relative
 
                     w-full
-                    max-w-[400px]
-                    min-h-[320px]
+                    max-w-[350px]
+                    min-h-[300px]
 
                     rounded-[28px]
 
-                    bg-white
+                    bg-white text-gray-900
 
                     border
                     border-gray-200
 
                     shadow-lg
 
-                    p-7
+                    p-5
 
                     transition-all
                     duration-300

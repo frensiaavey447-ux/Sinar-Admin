@@ -128,33 +128,33 @@ export default function InventarisPage() {
 
   <div
     key={item.id}
-    className="
-      group
-      relative
+className="
+  group
+  relative
 
-      w-full
-      max-w-[320px]
-      min-h-[320px]
+  w-full
+  max-w-[320px]
+  min-h-[320px]
 
-      rounded-[28px]
-      overflow-hidden
+  rounded-[28px]
+  overflow-hidden
 
-      bg-white text-gray-900/10
-      backdrop-blur-md
+  bg-white/10
+  backdrop-blur-xl
 
-      border
-      border-white/15
+  border
+  border-white/20
 
-      shadow-xl
+  shadow-xl
 
-      transition-all
-      duration-300
+  transition-all
+  duration-300
 
-      hover:-translate-y-2
-      hover:shadow-2xl
-      hover:border-[#D9B24C]
-      hover:bg-white text-gray-900/15
-    "
+  hover:-translate-y-2
+  hover:shadow-2xl
+  hover:border-[#D9B24C]
+  hover:bg-white/15
+"
   >
 
     {/* Badge Jumlah */}
