@@ -164,6 +164,8 @@ onClose();
           focus:ring-4
           focus:ring-green-100
           focus:border-[#4D7B38]
+          text-gray-900
+placeholder:text-gray-500
         "
       />
 
@@ -204,6 +206,8 @@ onClose();
           focus:ring-4
           focus:ring-green-100
           focus:border-[#4D7B38]
+          text-gray-900
+placeholder:text-gray-400
         "
       />
 
@@ -244,6 +248,8 @@ onClose();
           focus:ring-4
           focus:ring-green-100
           focus:border-[#4D7B38]
+          text-gray-900
+placeholder:text-gray-400
         "
       />
 
@@ -284,6 +290,8 @@ onClose();
           focus:ring-4
           focus:ring-green-100
           focus:border-[#4D7B38]
+          text-gray-900
+placeholder:text-gray-400
         "
       />
 
@@ -310,6 +318,7 @@ onClose();
               font-semibold
               hover:bg-gray-100
               transition
+              text-gray-800
             "
           >
             Reset

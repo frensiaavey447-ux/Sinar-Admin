@@ -102,6 +102,8 @@ export default function InventarisForm({
               focus:ring-4
               focus:ring-green-100
               focus:border-[#4D7B38]
+              text-gray-900
+placeholder:text-gray-400
             "
           />
 
@@ -148,6 +150,8 @@ export default function InventarisForm({
               focus:ring-4
               focus:ring-green-100
               focus:border-[#4D7B38]
+              text-gray-900
+placeholder:text-gray-400
             "
           />
 
@@ -256,7 +260,7 @@ export default function InventarisForm({
                 rounded-2xl
                 bg-red-500
                 hover:bg-red-600
-                text-white
+                text-[#3F662E]
                 font-semibold
                 transition
               "
@@ -299,6 +303,7 @@ export default function InventarisForm({
                 hover:bg-gray-100
                 font-semibold
                 transition
+                text-gray-800
               "
             >
               Reset

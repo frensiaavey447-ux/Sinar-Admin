@@ -93,6 +93,8 @@ export default function LaporanForm({
               focus:ring-4
               focus:ring-green-100
               focus:border-[#4D7B38]
+              text-gray-900
+placeholder:text-gray-500
             "
           />
 
@@ -182,6 +184,8 @@ export default function LaporanForm({
               focus:ring-4
               focus:ring-green-100
               focus:border-[#4D7B38]
+              text-gray-900
+placeholder:text-gray-500
             "
           />
 
@@ -271,6 +275,8 @@ export default function LaporanForm({
               focus:ring-4
               focus:ring-green-100
               focus:border-[#4D7B38]
+              text-gray-900
+placeholder:text-gray-500
             "
           />
 
@@ -333,7 +339,7 @@ export default function LaporanForm({
               <button
                 type="button"
                 onClick={resetForm}
-                className="w-60 h-11 rounded-xl border border-gray-300 bg-white hover:bg-gray-100 font-semibold"
+                className="w-60 h-11 rounded-xl border border-gray-300 bg-white text-gray-800 hover:bg-gray-100 font-semibold"
               >
                 Reset
               </button>
