@@ -45,29 +45,7 @@ export default function Hero() {
                 </p>
 
               </div>
-
-              <Link href="/profile">
-
-                <button
-                  className="
-                  mt-8
-                  bg-[#F5BE2C]
-                  hover:bg-yellow-400
-                  transition
-                  rounded-xl
-                  px-8
-                  py-3
-                  text-[16px]
-                  font-semibold
-                  text-[#23361A]
-                  "
-                >
-                  Pelajari lebih lanjut →
-                </button>
-
-              </Link>
-
-            </div>
+            </div>  
 
           </div>
 

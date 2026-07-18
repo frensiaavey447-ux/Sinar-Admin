@@ -6,7 +6,7 @@ import LoginCard from "./LoginCard";
 
 export default function LoginPage() {
   return (
-    <main className="h-screen bg-[#16240D] flex flex-col overflow-hidden">
+    <main className="min-h-screen flex flex-col bg-[#16240D]">
 
       <LoginNavbar />
 
@@ -17,7 +17,8 @@ export default function LoginPage() {
           items-center
           justify-center
           px-4
-          lg:px-8
+          py-4
+          text-[12px]
         "
       >
         <LoginCard />

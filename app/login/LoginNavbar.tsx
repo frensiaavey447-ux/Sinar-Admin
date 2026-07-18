@@ -73,28 +73,24 @@ export default function Navbar() {
             {/* Menu */}
             <nav className="flex items-center gap-8">
 
-              <Link href="/login" className="font-semibold text-white hover:text-yellow-300">
+              <Link href="/home" className="font-semibold text-white hover:text-yellow-300">
                 Home
               </Link>
 
-              <Link href="/login" className="font-semibold text-white hover:text-yellow-300">
+              <Link href="/jadwal" className="font-semibold text-white hover:text-yellow-300">
                 Jadwal Kegiatan
               </Link>
 
-              <Link href="/login" className="font-semibold text-white hover:text-yellow-300">
+              <Link href="/pengurus" className="font-semibold text-white hover:text-yellow-300">
                 Pengurus
               </Link>
 
-              <Link href="/login" className="font-semibold text-white hover:text-yellow-300">
+              <Link href="/laporan" className="font-semibold text-white hover:text-yellow-300">
                 Laporan Keuangan
               </Link>
 
-              <Link href="/login" className="font-semibold text-white hover:text-yellow-300">
+              <Link href="/inventaris" className="font-semibold text-white hover:text-yellow-300">
                 Inventaris
-              </Link>
-
-              <Link href="/login" className="font-semibold text-white hover:text-yellow-300">
-                Data Anak-Anak
               </Link>
 
             </nav>
@@ -153,7 +149,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/login"
+              href="/jadwal"
               onClick={() => setOpen(false)}
               className="border-b border-white/10 px-6 py-4 hover:bg-[#6E8F2F]"
             >
@@ -161,7 +157,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/login"
+              href="/pengurus"
               onClick={() => setOpen(false)}
               className="border-b border-white/10 px-6 py-4 hover:bg-[#6E8F2F]"
             >
@@ -169,7 +165,7 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/login"
+              href="/laporan"
               onClick={() => setOpen(false)}
               className="border-b border-white/10 px-6 py-4 hover:bg-[#6E8F2F]"
             >
@@ -177,20 +173,13 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/login"
+              href="/inventaris"
               onClick={() => setOpen(false)}
               className="border-b border-white/10 px-6 py-4 hover:bg-[#6E8F2F]"
             >
               Inventaris
             </Link>
 
-            <Link
-              href="/login"
-              onClick={() => setOpen(false)}
-              className="border-b border-white/10 px-6 py-4 hover:bg-[#6E8F2F]"
-            >
-              Data Anak-Anak
-            </Link>
 
           </nav>
 

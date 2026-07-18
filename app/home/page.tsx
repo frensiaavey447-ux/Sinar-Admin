@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../admin/components/Navbar";
+import Footer from "../admin/components/Footer";
 
 import Hero from "./heroo";
 import PrayerSchedule from "./PrayerSchedule";
