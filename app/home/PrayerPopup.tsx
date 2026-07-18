@@ -139,23 +139,23 @@ export default function PrayerPopup({
   type="time"
   value={time}
   onChange={(e) => setTime(e.target.value)}
-  className="
-    h-12
-    w-full
-    rounded-2xl
-    border
-    border-gray-200
-    bg-white
-    px-4
-    text-lg
-    font-semibold
-    text-gray-900
-    outline-none
-    transition
-    focus:border-[#467235]
-    focus:ring-4
-    focus:ring-[#467235]/15
-  "
+className="
+  h-12
+  w-full
+  rounded-2xl
+  border
+  border-gray-200
+  bg-white
+  px-4
+  text-lg
+  font-semibold
+  text-gray-900
+  outline-none
+  transition
+  focus:border-[#467235]
+  focus:ring-4
+  focus:ring-[#467235]/15
+"
 />
 
           </div>
@@ -166,21 +166,23 @@ export default function PrayerPopup({
 
         <div className="flex justify-end gap-3 px-7 pb-7">
 
-          <button
-            onClick={onClose}
-            className="
-              h-11
-              rounded-xl
-              border
-              border-gray-300
-              px-5
-              font-semibold
-              hover:bg-gray-100
-              transition
-            "
-          >
-            Batal
-          </button>
+<button
+  onClick={onClose}
+  className="
+    h-11
+    min-w-[110px]
+    rounded-xl
+    border
+    border-gray-300
+    bg-white
+    text-gray-900
+    px-5
+    font-semibold
+    hover:bg-gray-100
+  "
+>
+  Batal
+</button>
 
           <button
             onClick={onSave}

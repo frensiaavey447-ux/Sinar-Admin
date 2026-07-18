@@ -144,7 +144,7 @@ export default function LoginCard() {
                 text-[#355827]
               "
             >
-              Email atau Username
+              Username
             </label>
 
             <div
