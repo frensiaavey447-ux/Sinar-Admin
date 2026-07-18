@@ -82,6 +82,8 @@ export default function InventarisTable({
               focus:border-[#4D7B38]
               focus:ring-2
               focus:ring-green-100
+              text-gray-900
+              placeholder:text-gray-500
             "
           />
 

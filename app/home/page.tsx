@@ -7,7 +7,7 @@ import UpcomingEvent from "./UpcomingEvent";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#16240D] flex flex-col">
+    <main className="min-h-screen bg-[#16240D] text-white flex flex-col">
 
       {/* ================= NAVBAR ================= */}
       <Navbar />

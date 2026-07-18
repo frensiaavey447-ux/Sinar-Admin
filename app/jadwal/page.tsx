@@ -46,7 +46,7 @@ export default function JadwalPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-[#123523]">
+    <main className="min-h-screen flex flex-col bg-[#123523] text-white">
 
       <Navbar />
 

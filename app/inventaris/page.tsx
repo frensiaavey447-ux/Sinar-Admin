@@ -41,7 +41,7 @@ export default function InventarisPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-gradient-to-br from-[#0F2D1F] via-[#173826] to-[#214B35]">
+    <main className="min-h-screen flex flex-col text-white bg-gradient-to-br from-[#0F2D1F] via-[#173826] to-[#214B35]">
 
       <Navbar />
 
@@ -86,7 +86,7 @@ export default function InventarisPage() {
 
                     animate-pulse
 
-                    bg-white/10
+                    bg-white text-gray-900/10
                     border
                     border-white/10
                   "
@@ -139,7 +139,7 @@ export default function InventarisPage() {
       rounded-[28px]
       overflow-hidden
 
-      bg-white/10
+      bg-white text-gray-900/10
       backdrop-blur-md
 
       border
@@ -153,7 +153,7 @@ export default function InventarisPage() {
       hover:-translate-y-2
       hover:shadow-2xl
       hover:border-[#D9B24C]
-      hover:bg-white/15
+      hover:bg-white text-gray-900/15
     "
   >
 

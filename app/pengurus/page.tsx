@@ -41,7 +41,7 @@ export default function PengurusPage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-[#0F2D1F]">
+    <main className="min-h-screen flex flex-col bg-[#0F2D1F] text-white">
 
       <Navbar />
 

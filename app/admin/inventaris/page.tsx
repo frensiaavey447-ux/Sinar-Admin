@@ -216,7 +216,7 @@ export default function InventarisPage() {
   }
 
     return (
-    <main className="min-h-screen bg-[#16240D] flex flex-col">
+    <main className="min-h-screen bg-[#16240D] text-white flex flex-col">
 
       <Navbar />
 
@@ -279,7 +279,7 @@ export default function InventarisPage() {
 
         {/* Card */}
 
-        <div className="bg-white rounded-3xl shadow-xl p-5 md:p-6">
+        <div className="bg-white text-gray-900 rounded-3xl shadow-xl p-5 md:p-6">
 
           <div className="mb-4">
 

@@ -26,7 +26,7 @@ export default function PengurusPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#16240D] flex flex-col">
+    <main className="min-h-screen bg-[#16240D] text-white flex flex-col">
 
       <Navbar />
 
@@ -57,6 +57,7 @@ export default function PengurusPage() {
             <div
               className="
                 bg-white
+                text-gray-900
                 rounded-3xl
                 shadow-xl
                 p-8
@@ -78,6 +79,7 @@ export default function PengurusPage() {
             <div
               className="
                 bg-white
+                text-gray-900
                 rounded-3xl
                 shadow-xl
                 p-8

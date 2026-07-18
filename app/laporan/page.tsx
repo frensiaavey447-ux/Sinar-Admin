@@ -44,7 +44,7 @@ export default function LaporanPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#16240D] flex flex-col">
+    <main className="min-h-screen bg-[#16240D] text-whiteflex flex-col">
 
       <Navbar />
 
@@ -73,11 +73,11 @@ export default function LaporanPage() {
 
         {loading ? (
 
-          <div className="bg-white rounded-3xl shadow-xl p-6 animate-pulse h-[500px]" />
+          <div className="bg-white text-gray-900 rounded-3xl shadow-xl p-6 animate-pulse h-[500px]" />
 
         ) : laporan.length === 0 ? (
 
-          <div className="bg-white rounded-3xl shadow-xl p-16 text-center">
+          <div className="bg-white text-gray-900 rounded-3xl shadow-xl p-16 text-center">
 
             <div className="text-7xl mb-5">
               📄
@@ -95,7 +95,7 @@ export default function LaporanPage() {
 
         ) : (
 
-          <div className="bg-white rounded-3xl shadow-xl p-5 md:p-6">
+          <div className="bg-white text-gray-900 rounded-3xl shadow-xl p-5 md:p-6">
             <div
               className="
                 max-h-[450px]
@@ -103,7 +103,7 @@ export default function LaporanPage() {
                 rounded-2xl
                 border
                 border-gray-200
-                bg-white
+                bg-white text-gray-900
                 shadow-md
               "
             >

@@ -183,7 +183,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#26331F]">
+    <main className="min-h-screen bg-[#26331F] text-white">
 
       <Navbar />
 

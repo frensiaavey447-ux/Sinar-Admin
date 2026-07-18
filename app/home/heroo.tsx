@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section className="py-4">
 
-      <div className="bg-white rounded-[22px] overflow-hidden shadow-lg">
+      <div className="bg-white text-gray-900 rounded-[22px] overflow-hidden shadow-lg">
 
         <div className="grid lg:grid-cols-[1fr_1fr] min-h-[200px]">
 

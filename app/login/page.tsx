@@ -6,7 +6,7 @@ import LoginCard from "./LoginCard";
 
 export default function LoginPage() {
   return (
-    <main className="min-h-screen flex flex-col bg-[#16240D]">
+    <main className="min-h-screen bg-[#16240D] text-white flex flex-col ">
 
       <LoginNavbar />
 

@@ -49,7 +49,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#26331F] flex flex-col">
+    <main className="min-h-screen bg-[#26331F] flex flex-col text-white">
 
       {/* Navbar */}
       <Navbar />
@@ -86,7 +86,7 @@ export default function ProfilePage() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
           whileHover={{ y: -3 }}
-          className="flex h-[260px] flex-col justify-center rounded-2xl bg-white p-8 lg:h-[300px]"
+          className="flex h-[260px] flex-col justify-center rounded-2xl bg-white text-gray-900 p-8 lg:h-[300px]"
         >
 
           <h2 className="text-[14px] font-bold leading-8 text-[#1F1F1F]">
@@ -149,7 +149,7 @@ export default function ProfilePage() {
               className="
                 min-h-[250px]
                 rounded-2xl
-                bg-white
+                bg-white text-gray-900
                 p-7
                 shadow-lg
               "
@@ -182,7 +182,7 @@ export default function ProfilePage() {
               className="
                 min-h-[250px]
                 rounded-2xl
-                bg-white
+                bg-white text-gray-900
                 p-7
                 shadow-lg
               "
