@@ -168,20 +168,18 @@ className="
 
 <button
   onClick={onClose}
-  className="
-    h-11
-    min-w-[110px]
-    rounded-xl
-    border
-    border-gray-300
-    bg-white
-    text-gray-900
-    px-5
-    font-semibold
-    hover:bg-gray-100
-  "
+  style={{
+    width: "120px",
+    height: "44px",
+    background: "#ffffff",
+    color: "#000000",
+    border: "2px solid #d1d5db",
+    borderRadius: "12px",
+    fontWeight: "700",
+    fontSize: "16px",
+  }}
 >
-  Batal
+  TEST BATAL
 </button>
 
           <button
