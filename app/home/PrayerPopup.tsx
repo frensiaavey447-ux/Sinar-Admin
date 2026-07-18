@@ -80,22 +80,25 @@ export default function PrayerPopup({
 
           </div>
 
-          <button
-            onClick={onClose}
-            className="
-              flex
-              h-9
-              w-9
-              items-center
-              justify-center
-              rounded-full
-              hover:bg-gray-100
-              transition
-            "
-          >
-            <X size={18} />
-          </button>
-
+<button
+  onClick={onClose}
+  className="
+    w-11
+    h-11
+    rounded-full
+    hover:bg-gray-100
+    flex
+    items-center
+    justify-center
+    text-gray-700
+    -mr-6
+  "
+>
+  <X
+    size={20}
+    className="text-gray-700"
+  />
+</button>
         </div>
 
         {/* BODY */}
@@ -132,26 +135,28 @@ export default function PrayerPopup({
               Waktu
             </label>
 
-            <input
-              type="time"
-              value={time}
-              onChange={(e) => setTime(e.target.value)}
-              className="
-                h-12
-                w-full
-                rounded-2xl
-                border
-                border-gray-200
-                px-4
-                text-lg
-                font-semibold
-                outline-none
-                transition
-                focus:border-[#467235]
-                focus:ring-4
-                focus:ring-[#467235]/15
-              "
-            />
+<input
+  type="time"
+  value={time}
+  onChange={(e) => setTime(e.target.value)}
+  className="
+    h-12
+    w-full
+    rounded-2xl
+    border
+    border-gray-200
+    bg-white
+    px-4
+    text-lg
+    font-semibold
+    text-gray-900
+    outline-none
+    transition
+    focus:border-[#467235]
+    focus:ring-4
+    focus:ring-[#467235]/15
+  "
+/>
 
           </div>
 
