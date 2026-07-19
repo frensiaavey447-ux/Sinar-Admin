@@ -166,21 +166,21 @@ export default function LoginCard() {
                 className="text-[#4D7B38]"
               />
 
-              <input
-                autoComplete="username"
-                type="text"
-                value={username}
-                onChange={(e) =>
-                  setUsername(e.target.value)
-                }
-                placeholder="Masukkan Username"
-                className="
-                  flex-1
-                  ml-3
-                  outline-none
-                  bg-transparent
-                "
-              />
+<input
+  autoComplete="username"
+  type="text"
+  value={username}
+  onChange={(e) => setUsername(e.target.value)}
+  placeholder="Masukkan Username"
+  className="
+    flex-1
+    ml-3
+    outline-none
+    bg-transparent
+    text-[#355827]
+    placeholder:text-gray-400
+  "
+/>
             </div>
 
             {/* Password */}
@@ -216,24 +216,20 @@ export default function LoginCard() {
                 className="text-[#4D7B38]"
               />
 
-              <input
-                type={
-                  showPassword
-                    ? "text"
-                    : "password"
-                }
-                value={password}
-                onChange={(e) =>
-                  setPassword(e.target.value)
-                }
-                placeholder="Masukkan Password"
-                className="
-                  flex-1
-                  ml-3
-                  outline-none
-                  bg-transparent
-                "
-              />
+<input
+  type={showPassword ? "text" : "password"}
+  value={password}
+  onChange={(e) => setPassword(e.target.value)}
+  placeholder="Masukkan Password"
+  className="
+    flex-1
+    ml-3
+    outline-none
+    bg-transparent
+    text-[#355827]
+    placeholder:text-gray-400
+  "
+/>
 
               {showPassword ? (
                 <EyeOff
