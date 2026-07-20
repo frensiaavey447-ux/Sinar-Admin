@@ -217,7 +217,7 @@ export default function ProfilePage() {
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition group-hover:opacity-100">
 
             <div className="rounded-xl bg-white text-gray-900 px-5 py-3 font-semibold shadow-lg">
-              Ganti Hero
+              Ganti Image
             </div>
 
           </div>
@@ -283,7 +283,7 @@ export default function ProfilePage() {
 
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition group-hover:opacity-100">
             <div className="rounded-xl bg-white text-gray-900 px-5 py-3 font-semibold shadow-lg">
-              Ganti Banner
+              Ganti Image
             </div>
           </div>
         </div>

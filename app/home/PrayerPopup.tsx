@@ -179,7 +179,7 @@ className="
     fontSize: "16px",
   }}
 >
-  TEST BATAL
+   Batal
 </button>
 
           <button
